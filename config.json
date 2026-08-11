@@ -1,0 +1,8 @@
+{
+  "symbol" : "MSFT",
+  "api_key" : "AT366S106F0M2WPK",
+  "interval_seconds" : 60,
+  "ma_window" : 20,
+  "bollinger_window": 20,
+  "bollinger_std": 2
+}
