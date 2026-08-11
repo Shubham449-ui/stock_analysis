@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Intraday Plot for {{ symbol }}</h1>
+    <img src="data:image/png;base64,{{ plot_data }}" alt="{{ symbol }} Plot">
+    <br>
+    <a href="{{ url_for('index') }}">Back to Symbol Selection</a>
+</body>
+</html>
